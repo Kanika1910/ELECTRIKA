@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./Navbar.css">
+    <title>About Us</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        /* font-family: 'Cedarville Cursive', cursive; */
+    }
+    .about{
+        width: 100%;
+        /* padding: 0px 0px; */
+        background-color: #191919;
+    }
+    .about img{
+        height: auto;
+        width: 600px;
+    }
+    .about-text{
+        width: 570px;
+    }
+    .main{
+        width: 1200px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: black; */
+    }
+    .about-text h1{
+        color: wheat;
+        font-size: 80px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .about-text h5{
+        color: wheat;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    span{
+        color: #f9004d;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 38px;
+    }
+    .about button{
+        background: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+    .about button:hover{
+       background: transparent;
+       border: 2px solid #f9004d;
+       cursor: pointer; 
+    }
+</style>
+<body>
+    <div class="navbar">
+        <ul>
+    
+            <a href="./home.html"><li>Home</li></a>
+            <a href="./category.html"><li>Category</li></a>
+            <a href="./feedback.html"><li>Feedback</li></a>
+            <a href="./Contact Us.html"><li>Contact Us</li></a>
+            <a href="./signup.html"><li>SignUp</li></a>
+            <a href="./login.html"><li>Login</li></a>
+        </ul>
+    </div>
+    <section class="about">
+        <div class="main">
+            <img src="./aboutusimage.jpg" alt="">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <h5>Develepor<span> & Designer</span></h5>
+                <p>Customers can mail us on our official mail id Electrika.co.in at anytime of the day. We are there to entertain their queries anytime.</p>
+                <p>You can write to us at our official instagram account <a href="https://www.instagram.com/">@electrikaofficial</a></p>
+                <p>U can also speak to our agents on our 24/7 available number 011-987xxx</p>
+                <p>Our service centers are available throughout the country including 197 official stores and more than 150 service centers.</p>
+                <button type="button">let's explore</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body
+{
+    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-image: url(background1.jpg.jpg); */
+    background-color: #1c8adb;
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+
+}
+.sign-up-form
+{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 10px;
+    margin: 8% auto 0;
+    margin-top: 60px;
+    text-align: center;
+    /* display: flex; */
+}
+.sign-up-form h1
+{
+    color: #1c8abd;
+    margin-bottom: 30 px;
+
+}
+.input-box
+{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+}
+button
+{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.signup-btn
+{
+    background-color: #1c8adb;
+
+}
+.google-btn
+{
+    background-color: #21afde;
+
+}
+a
+{
+    text-decoration: none;
+    
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.or
+{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+img
+{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;;
+}
+.container2 img{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    margin-left: 90px;
+    margin-top: 70px;
+    padding: 10px;
+    /* align-items: center; */
+}
+.container1{
+    display: flex;
+}
+.container2{
+    align-items: center;
+}

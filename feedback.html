@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Navbar.css">
+    <title>Feedback</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #D4F6CC;
+        margin: 0%;
+    }
+    h1{
+        text-align: center;
+        font-size: 60px;
+        text-decoration: none;
+
+    }
+    .Feedback form{
+    width: 700px;
+    box-shadow: 0 0 15px 0 rgb(201, 212, 220);
+    background: rgb(4, 188, 254);
+    padding: 40px;
+    margin: 7% auto 0;
+    margin-left: 2%;
+    text-align: center;
+    height: 100%;
+}
+    .input-box
+{
+    /* border-radius: 20px; */
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid rgb(98, 104, 104);
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+button
+{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.submit-btn
+{
+    background-color:blue;
+}
+.submit-btn:hover{
+    background-color: cadetblue;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .left{
+    max-width: 50%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container .left img{
+    /* max-width: 100%; */
+    /* max-height: 75vh; */
+    overflow: hidden;
+    width: 50%;
+    transform: translateX(50%) scale(2);
+    margin-top: 70px;
+    /* height: 100%; */
+}
+
+.container form{
+    max-width: 50%;
+    margin-top: 50px;
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+
+</style>
+<body>
+
+    <div class="navbar">
+        <ul>
+
+            <a href="./home.html"><li>Home</li></a>
+            <a href="./category.html"><li>Category</li></a>
+            <a href="./feedback.html"><li>Feedback</li></a>
+            <a href="./Contact Us.html"><li>Contact Us</li></a>
+            <a href="./signup.html"><li>SignUp</li></a>
+            <a href="./login.html"><li>Login</li></a>
+        </ul>
+    </div>
+    <div class="Feedback form">
+        <a href="./home.html"><h1> Feedback Form</a></h1>
+        <div class="container">
+        <div class="left"><img src="./feedback1.png" alt=""></div>
+        <form name="form" action="#">
+            <input type="Name" class="input-box" placeholder="Your Name" autocomplete="off"><br>
+            <input type="tel" class="input-box" placeholder="Your contact" autocomplete="off" maxlength="10"><br>
+            <input type="email" name="email" class="input-box" placeholder="Your Email" autocomplete="off"><br>
+            Are you satisfied with our services?
+            <p><span><input type="radio" name="1"></span>yes</p>
+            <p><span><input type="radio" name="1"></span>no</p>
+            <input type="reviews" class="input-box" placeholder="Any other Reviews"><br><br>
+            <button type="button" class="submit-btn" onclick="ValidateEmail(document.form.email)">Submit</button>
+        </form> 
+    </div>
+
+        <script>
+            function ValidateEmail(inputText)
+            {
+            var mailformat =  /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+)(.[a-z]+)?$/   ///^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+            if(inputText.value.match(mailformat))
+            {
+            // alert("You have entered a valid email address!");    
+            document.form.email.focus();
+            return true;
+            }
+            else
+            {
+            alert("Sorry! incorrect email ID");    
+            document.form.email.focus();
+            return false;
+            }
+            }
+        </script>
+    
+</body>
+</html>
